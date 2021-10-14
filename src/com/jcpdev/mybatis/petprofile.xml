@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="petprofile">
+
+<insert id="p_insert" parameterType="PetProfile">
+		insert into pet (pet, p_name, p_gender, p_weight, p_birth, p_neu)
+		values (#{pet}, #{p_name}, #{p_gender}, #{p_weight}, #{p_birth}, #{p_neu})
+</insert>
+	
+	
+</mapper>
