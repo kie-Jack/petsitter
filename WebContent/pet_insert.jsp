@@ -10,7 +10,7 @@
 <body>
 	<h1>펫 정보 입력</h1>
 	<hr>
-	<form name = "pet" method="post" action="">
+	<form name = "petinsert" method="post" action="insert.do">
 		<table>
 			<tr>
 				<th>펫 이름</th>
@@ -27,10 +27,12 @@
 			</tr>
 			<tr>
 				<th>몸무게</th>
-				<td><input type="number" name="p_weight" id="p_weight" placeholder="예) 3.2">kg</td>
+				<td><input type="text" name="p_weight" id="p_weight" placeholder="예) 3.2">kg</td>
 			</tr>
+			<tr>
 				<th>생년월일</th>
 				<td><input type="date" name="p_birth" id="p_birth" value="2020-01-01"></td>
+			</tr>	
 			<tr>	
 				<th>중성화</th>
 				<td><input type="radio" name="p_neu" value ="neu" id="neu_y"><label for="neu_y">했어요</label>
@@ -38,10 +40,10 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-				<input type="submit" value="다음으로" class="btn" onclick="location.href=">
-				<input type="button" value="뒤로가기" onclick="location.href='list.do'" class="btn"></td>		
+				<input type="submit" value="다음으로" class="btn" onclick="location.href= pet.do">
+				<input type="button" value="뒤로가기" onclick="location.href='list.do'" class="btn"></td>
+			</tr>			
 		</table>
 	</form>
-
 </body>
 </html>

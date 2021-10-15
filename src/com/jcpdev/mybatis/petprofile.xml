@@ -5,8 +5,8 @@
 <mapper namespace="petprofile">
 
 <insert id="p_insert" parameterType="PetProfile">
-		insert into pet (pet, p_name, p_gender, p_weight, p_birth, p_neu)
-		values (#{pet}, #{p_name}, #{p_gender}, #{p_weight}, #{p_birth}, #{p_neu})
+		insert into pet(idx, pet, p_name, p_gender, p_weight, p_birth, p_neu) 
+		values (#{idx}, #{pet}, #{p_name}, #{p_gender}, #{p_weight}, #{p_birth}, #{p_neu})
 </insert>
 	
 	
