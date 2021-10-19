@@ -48,7 +48,7 @@ public class FrontController extends HttpServlet {
 		}
 		
 		//이 시점에서 forward 에 isRedirect 와 url 값이 저장되었으면 ok!
-		if(forward.isRedirect()) {   //타입 boolean 일때는 getXXX 아니고 isXXX 입니다.
+		if(forward.isRedirect()) {   
 			response.sendRedirect(forward.getUrl());
 		}else {
 			RequestDispatcher rd 

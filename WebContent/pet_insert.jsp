@@ -6,6 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>펫 정보 입력</title>
+<link rel= "stylesheet" href="petsitter.css?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<h1>펫 정보 입력</h1>
@@ -13,7 +18,7 @@
 	<form name = "petinsert" method="post" action="insert.do">
 		<table>
 			<tr>
-				<th>펫 이름</th>
+				<th>이름</th>
 				<td><input type="text" name="p_name" placeholder="예) 멍뭉이" required></td>
 			</tr>
 			<tr>
@@ -22,15 +27,15 @@
 			</tr>
 			<tr>
 				<th>성별</th>
-				<td><input type="radio" name="p_gender" value="female" id="female"><label for="female">여자 아이</label>
-					<input type="radio" name="p_gender" value="male" id="male"><label for="male">남자 아이</label></td>
+				<td><input type="radio" name="p_gender" value="female" id="female"><label for="female">여자아이</label>
+					<input type="radio" name="p_gender" value="male" id="male"><label for="male">남자아이</label></td>
 			</tr>
 			<tr>
 				<th>몸무게</th>
 				<td><input type="text" name="p_weight" id="p_weight" placeholder="예) 3.2">kg</td>
 			</tr>
 			<tr>
-				<th>생년월일</th>
+				<th>생일</th>
 				<td><input type="date" name="p_birth" id="p_birth" value="2020-01-01"></td>
 			</tr>	
 			<tr>	
@@ -41,7 +46,7 @@
 			<tr>
 				<td colspan="2" align="center">
 				<input type="submit" value="다음으로" class="btn" onclick="location.href= pet.do">
-				<input type="button" value="뒤로가기" onclick="location.href='list.do'" class="btn"></td>
+				<input type="button" value="뒤로가기" class="b_btn" onclick="location.href='list.do'" class="btn"></td>
 			</tr>			
 		</table>
 	</form>

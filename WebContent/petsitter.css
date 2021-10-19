@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body{
+font-family: 'Gowun Batang', serif;
+font-size: 80%;
+}
+table{
+	justify-content: center; 
+	padding: 5px;
+	border: solid black;
+	margin: auto;
+	border-radius: 5px;
+	background-color: #dcedc8;
+}
+h1 {
+	text-align: center;
+	color: black;
+}
+
+th{
+	text-align: center;
+	padding: 20px;
+	border: solid white;
+	border-radius: 5px;
+}
+td{
+	border: solid white;
+	border-radius: 5px;
+}
+
+input{
+	border: solid white;
+	border-radius: 5px;
+}
+
+.btn{
+	margin: auto;
+}
+.b_btn{
+	margin: auto;
+}
